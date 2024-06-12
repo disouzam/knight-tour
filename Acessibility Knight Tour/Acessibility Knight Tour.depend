@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1293622254 source:c:\documents and settings\dickson\desktop\knight tour\acessibility knight tour\coordinate.cc
+	"coordinate.h"
+
+1293622266 c:\documents and settings\dickson\desktop\knight tour\acessibility knight tour\coordinate.h
+	<iostream>
+
+1293635683 source:c:\documents and settings\dickson\desktop\knight tour\acessibility knight tour\knight.cc
+	"knight.h"
+
+1293634378 c:\documents and settings\dickson\desktop\knight tour\acessibility knight tour\knight.h
+	<iostream>
+	<cstdlib>
+	"C:\Dev-Cpp\include\conio2.h"
+	"coordinate.h"
+	"chessboard.h"
+
+1287610638 c:\dev-cpp\include\conio2.h
+	<conio.h>
+	<windows.h>
+
+1293622557 c:\documents and settings\dickson\desktop\knight tour\acessibility knight tour\chesstable.h
+	<iostream>
+	<iomanip>
+	"C:\Dev-Cpp\include\conio2.h"
+	"coordinate.h"
+
+1293635803 source:c:\documents and settings\dickson\desktop\knight tour\acessibility knight tour\main.cpp
+	<iostream>
+	<cstdlib>
+	"chessboard.h"
+	"knight.h"
+
+1293579592 source:c:\documents and settings\dickson\desktop\knight tour\acessibility knight tour\chesstable.cc
+	"chesstable.h"
+
+1293628908 c:\documents and settings\dickson\desktop\knight tour\acessibility knight tour\chessboard.h
+	<iostream>
+	<iomanip>
+	"C:\Dev-Cpp\include\conio2.h"
+	"coordinate.h"
+
+1293634672 source:c:\documents and settings\dickson\desktop\knight tour\acessibility knight tour\chessboard.cc
+	"chessboard.h"
+
+1293618654 source:f:\documentos\dickson\engenharia metalúrgica\5º período 2011-1\disciplinas\algoritmos e estruturas de dados iii\treinamento c++\knight tour\acessibility knight tour\coordinate.cc
+	"coordinate.h"
+
+1293618666 f:\documentos\dickson\engenharia metalúrgica\5º período 2011-1\disciplinas\algoritmos e estruturas de dados iii\treinamento c++\knight tour\acessibility knight tour\coordinate.h
+	<iostream>
+
+1293632203 source:f:\documentos\dickson\engenharia metalúrgica\5º período 2011-1\disciplinas\algoritmos e estruturas de dados iii\treinamento c++\knight tour\acessibility knight tour\main.cpp
+	<iostream>
+	<cstdlib>
+	"chessboard.h"
+	"knight.h"
+
+1293625308 f:\documentos\dickson\engenharia metalúrgica\5º período 2011-1\disciplinas\algoritmos e estruturas de dados iii\treinamento c++\knight tour\acessibility knight tour\chessboard.h
+	<iostream>
+	<iomanip>
+	"C:\Dev-Cpp\include\conio2.h"
+	"coordinate.h"
+
+1293630778 f:\documentos\dickson\engenharia metalúrgica\5º período 2011-1\disciplinas\algoritmos e estruturas de dados iii\treinamento c++\knight tour\acessibility knight tour\knight.h
+	<iostream>
+	<cstdlib>
+	"C:\Dev-Cpp\include\conio2.h"
+	"coordinate.h"
+	"chessboard.h"
+
+1293631072 source:f:\documentos\dickson\engenharia metalúrgica\5º período 2011-1\disciplinas\algoritmos e estruturas de dados iii\treinamento c++\knight tour\acessibility knight tour\chessboard.cc
+	"chessboard.h"
+
+1293633303 source:f:\documentos\dickson\engenharia metalúrgica\5º período 2011-1\disciplinas\algoritmos e estruturas de dados iii\treinamento c++\knight tour\acessibility knight tour\knight.cc
+	"knight.h"
+

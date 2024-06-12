@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1293452049 source:c:\documents and settings\dickson\desktop\knight tour\random knight tour\coordinate.cc
+	"coordinate.h"
+
+1293451971 c:\documents and settings\dickson\desktop\knight tour\random knight tour\coordinate.h
+	<iostream>
+
+1293659870 source:c:\documents and settings\dickson\desktop\knight tour\random knight tour\knight.cc
+	"knight.h"
+
+1293658674 c:\documents and settings\dickson\desktop\knight tour\random knight tour\knight.h
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cstring>
+	"coordinate.h"
+	"chesstable.h"
+
+1293659739 c:\documents and settings\dickson\desktop\knight tour\random knight tour\chesstable.h
+	<iostream>
+	<iomanip>
+	<cstring>
+	<fstream>
+	"C:\Dev-Cpp\include\conio2.h"
+	"coordinate.h"
+
+1278394516 c:\dev-cpp\include\conio2.h
+	<conio.h>
+	<windows.h>
+
+1293659989 source:c:\documents and settings\dickson\desktop\knight tour\random knight tour\main.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	"chesstable.h"
+	"knight.h"
+
+1293659954 source:c:\documents and settings\dickson\desktop\knight tour\random knight tour\chesstable.cc
+	"chesstable.h"
+
