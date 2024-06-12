@@ -42,7 +42,7 @@ function basicSetup(){
 function runPipCompile(){
     # https://pip.pypa.io/en/stable/topics/secure-installs/
     # https://pip-tools.readthedocs.io/en/latest/cli/pip-compile/
-    pip-compile --generate-hashes --rebuild --no-strip-extras --emit-find-links ./../../../requirements.in --output-file ./../../requirements.txt
+    pip-compile --generate-hashes --rebuild --no-strip-extras --emit-find-links ./../../requirements.in --output-file ./../../requirements.txt
 }
 
 function installRequiredDependencies(){
