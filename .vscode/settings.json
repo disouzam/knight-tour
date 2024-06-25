@@ -1,0 +1,27 @@
+{
+    "python.envFile": "${workspaceFolder}/pythonSetup/.venv312",
+    "pylint.importStrategy": "fromEnvironment",
+    "pylint.args": [
+        "--rcfile=${workspaceFolder}/python/pylint3.rc"
+    ],
+    "python.testing.pytestArgs": [
+        "${workspaceFolder}/python/tests",
+        "-vv",
+    ],
+    "python.testing.cwd": "${workspaceFolder}/python/tests",
+    "python.testing.promptToConfigure": true,
+    "python.testing.pytestEnabled": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "notebook.formatOnSave.enabled": true,
+    "editor.wordWrapColumn": 100,
+    "editor.rulers": [
+        100
+    ],
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "todo-tree.tree.scanMode": "open files",
+    "files.trimTrailingWhitespace": true
+}
