@@ -4,7 +4,7 @@
 
 
 class Coordinate(object):
-    """Coordinate():
+    """Coordinate(object):
     Store information of horizontal and vertical position in a chess board
     """
 
@@ -19,3 +19,13 @@ class Coordinate(object):
 
     def __repr__(self) -> str:
         return self.__str__()
+
+    @property
+    def horizontal(self) -> int:
+        """Horizontal position"""
+        return self.__horizontal
+
+    @property
+    def vertical(self) -> int:
+        """Vertical position"""
+        return self.__vertical
