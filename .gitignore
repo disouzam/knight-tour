@@ -42,3 +42,4 @@ README.html
 *.txt
 !requirements.txt
 !requirements_ALL.txt
+python/tests/__pycache__/
