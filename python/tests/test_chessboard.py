@@ -48,3 +48,19 @@ def test_fill_position() -> None:
 
             assert status == order
             order += 1
+
+
+def test_is_full_board() -> None:
+    cb = ChessBoard()
+
+    assert not cb.is_full()
+
+    order = 1
+
+    for i in range(0, 8):
+        for j in range(0, 8):
+            pos = Coordinate(i, j)
+            cb.fill_position(pos, order)
+            order += 1
+
+    assert cb.is_full()

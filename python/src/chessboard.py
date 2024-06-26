@@ -44,3 +44,11 @@ class ChessBoard(object):
         v = position.vertical
 
         return self.__board_positions[h][v]
+
+    def is_full(self) -> bool:
+        for i in range(0, 8):
+            for j in range(0, 8):
+                if self.__board_positions[i][j] == 0:
+                    return False
+
+        return True
