@@ -6,6 +6,7 @@ dill==0.3.8
 iniconfig==2.0.0
 isort==5.13.2
 mccabe==0.7.0
+numpy==2.0.0
 packaging==24.1
 pip==24.1
 pip-tools==7.4.1
