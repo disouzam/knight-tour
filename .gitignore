@@ -45,3 +45,4 @@ README.html
 
 python/tests/__pycache__/
 python/src/__pycache__/
+.coverage
