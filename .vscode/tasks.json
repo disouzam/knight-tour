@@ -40,7 +40,7 @@
             "type": "shell",
             "command": "activate.bat && python --version && cd ../.. && python -m coverage run -m --branch pytest",
             "options": {
-                "cwd": "${workspaceFolder}/.venv311/Scripts"
+                "cwd": "${workspaceFolder}/pythonSetup/.venv312/Scripts"
             },
             "problemMatcher": {
                 "owner": "python",
@@ -76,7 +76,7 @@
             "type": "shell",
             "command": "activate.bat && python --version && cd ../.. && python -m coverage html --show-contexts",
             "options": {
-                "cwd": "${workspaceFolder}/.venv311/Scripts"
+                "cwd": "${workspaceFolder}/pythonSetup/.venv312/Scripts"
             },
             "problemMatcher": {
                 "owner": "python",
