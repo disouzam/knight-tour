@@ -14,6 +14,7 @@ class ChessBoard(object):
 
     def __init__(self) -> None:
         self.__board_positions = np.zeros((8, 8))
+        self.__occupiedpositions = 0
 
     def __str__(self) -> str:
         return ''
@@ -37,6 +38,7 @@ class ChessBoard(object):
         h = position.horizontal
         v = position.vertical
 
+        self.__occupiedpositions += 1
         self.__board_positions[h][v] = order
 
     def position_status(self, position: Coordinate) -> int:
@@ -46,9 +48,4 @@ class ChessBoard(object):
         return self.__board_positions[h][v]
 
     def is_full(self) -> bool:
-        for i in range(0, 8):
-            for j in range(0, 8):
-                if self.__board_positions[i][j] == 0:
-                    return False
-
-        return True
+        return self.__occupiedpositions == 64
