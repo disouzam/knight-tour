@@ -2,13 +2,14 @@ astroid==3.2.2
 build==1.2.1
 click==8.1.7
 colorama==0.4.6
+coverage==7.5.4
 dill==0.3.8
 iniconfig==2.0.0
 isort==5.13.2
 mccabe==0.7.0
 numpy==2.0.0
 packaging==24.1
-pip==24.1
+pip==24.1.1
 pip-tools==7.4.1
 platformdirs==4.2.2
 pluggy==1.5.0
