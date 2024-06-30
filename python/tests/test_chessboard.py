@@ -87,6 +87,34 @@ def test_fill_position() -> None:
             order += 1
 
 
+def test_fill_position_out_of_order() -> None:
+    """test_fill_position_out_of_order() -> None:
+    Check errors raised when a position is tried to be filled out of order
+    For example, when no position is filled, the order must be 1 - it is the first position
+    Passing any value for order different than 1 in this case must throw an exception of type
+    ArgumentError
+    """
+    cb = ChessBoard()
+    common_message = "Positions must be filled sequentially. Number of current occupied positions: "
+
+    pos = Coordinate(0, 0)
+    order = 0
+    with pytest.raises(ArgumentError) as exception_info:
+        cb.fill_position(pos, order)
+
+    custom_message = "0. Order passed as argument: 0"
+    assert (common_message + custom_message) == str(
+        exception_info.value)
+
+    order = 2
+    with pytest.raises(ArgumentError) as exception_info:
+        cb.fill_position(pos, order)
+
+    custom_message = "0. Order passed as argument: 2"
+    assert (common_message + custom_message) == str(
+        exception_info.value)
+
+
 def test_is_full_board() -> None:
     cb = ChessBoard()
 

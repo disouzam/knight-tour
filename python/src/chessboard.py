@@ -38,8 +38,16 @@ class ChessBoard(object):
         h = position.horizontal
         v = position.vertical
 
-        self.__occupiedpositions += 1
-        self.__board_positions[h][v] = order
+        if self.__occupiedpositions + 1 == order:
+            self.__occupiedpositions += 1
+            self.__board_positions[h][v] = order
+        else:
+            message_part_1 = "Positions must be filled sequentially. "
+            message_part_2 = f"Number of current occupied positions: {
+                self.__occupiedpositions}. "
+            message_part_3 = f"Order passed as argument: {order}"
+            compiled_message = message_part_1 + message_part_2 + message_part_3
+            raise ArgumentError(compiled_message)
 
     def position_status(self, position: Coordinate) -> int:
         h = position.horizontal
