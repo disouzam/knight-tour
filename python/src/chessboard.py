@@ -35,7 +35,10 @@ class ChessBoard(object):
 
         return board_string
 
-    def is_occupied(self, horizontal: int, vertical: int) -> bool:
+    def is_occupied(self, position: Coordinate) -> bool:
+
+        horizontal = position.horizontal
+        vertical = position.vertical
 
         if horizontal < 0 or horizontal > 7:
             raise ArgumentError(

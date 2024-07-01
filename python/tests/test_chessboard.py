@@ -15,7 +15,8 @@ def test_initialization() -> None:
 
     for i in range(0, 8):
         for j in range(0, 8):
-            is_occupied = cb.is_occupied(i, j)
+            pos = Coordinate(i, j)
+            is_occupied = cb.is_occupied(pos)
             assert not is_occupied
 
 
@@ -27,28 +28,32 @@ def test_checks_of_isoccupied_for_invalid_positions() -> None:
 
     # Negative horizontal position
     with pytest.raises(ArgumentError) as exception_info:
-        _ = cb.is_occupied(-1, 0)
+        pos = Coordinate(-1, 0)
+        _ = cb.is_occupied(pos)
 
     assert "Horizontal value is incorrect. Must be in range 0 - 7." == str(
         exception_info.value)
 
     # Positive horizontal position but out of bounds
     with pytest.raises(ArgumentError) as exception_info:
-        _ = cb.is_occupied(8, 0)
+        pos = Coordinate(8, 0)
+        _ = cb.is_occupied(pos)
 
     assert "Horizontal value is incorrect. Must be in range 0 - 7." == str(
         exception_info.value)
 
     # Negative horizontal position
     with pytest.raises(ArgumentError) as exception_info:
-        _ = cb.is_occupied(0, -1)
+        pos = Coordinate(0, -1)
+        _ = cb.is_occupied(pos)
 
     # Positive vertical position but out of bounds
     assert "Vertical value is incorrect. Must be in range 0 - 7." == str(
         exception_info.value)
 
     with pytest.raises(ArgumentError) as exception_info:
-        _ = cb.is_occupied(0, 8)
+        pos = Coordinate(0, 8)
+        _ = cb.is_occupied(pos)
 
     assert "Vertical value is incorrect. Must be in range 0 - 7." == str(
         exception_info.value)
