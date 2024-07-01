@@ -28,5 +28,11 @@
             "program": "${file}",
             "console": "integratedTerminal"
         },
+        {
+            "name": "Debug chessboard_playground",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "python.src.chessboard_playground"
+        }
     ]
 }

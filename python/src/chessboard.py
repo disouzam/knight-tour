@@ -22,6 +22,19 @@ class ChessBoard(object):
     def __repr__(self) -> str:
         return self.__str__()
 
+    def board_representation(self):
+
+        board_string = ''
+
+        for i in range(0, 8):
+            if i > 0:
+                board_string += '\n'
+            for j in range(0, 8):
+                pos = Coordinate(i, j)
+                board_string += f"{self.position_status(pos):3n}"
+
+        return board_string
+
     def is_occupied(self, horizontal: int, vertical: int) -> bool:
 
         if horizontal < 0 or horizontal > 7:
