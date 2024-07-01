@@ -134,3 +134,25 @@ def test_is_full_board() -> None:
             order += 1
 
     assert cb.is_full()
+
+
+def test_board_representation():
+    cb = ChessBoard()
+    board_string = cb.board_representation()
+
+    expected_board = '  0  0  0  0  0  0  0  0\n  0  0  0  0  0  0  0  0\n  0  0  0  0  0  0  0  0\n  0  0  0  0  0  0  0  0\n  0  0  0  0  0  0  0  0\n  0  0  0  0  0  0  0  0\n  0  0  0  0  0  0  0  0\n  0  0  0  0  0  0  0  0'
+    assert board_string == expected_board
+
+    cb2 = ChessBoard()
+
+    order = 1
+    for i in range(0, 8):
+        for j in range(0, 8):
+            pos = Coordinate(i, j)
+            cb2.fill_position(pos, order)
+            order += 1
+
+    board_string = cb2.board_representation()
+
+    expected_board = '  1  2  3  4  5  6  7  8\n  9 10 11 12 13 14 15 16\n 17 18 19 20 21 22 23 24\n 25 26 27 28 29 30 31 32\n 33 34 35 36 37 38 39 40\n 41 42 43 44 45 46 47 48\n 49 50 51 52 53 54 55 56\n 57 58 59 60 61 62 63 64'
+    assert board_string == expected_board
