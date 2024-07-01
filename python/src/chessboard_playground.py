@@ -29,7 +29,7 @@ while not cb3.is_full():
     random_v = random.randint(0, 7)
     pos = Coordinate(random_h, random_v)
 
-    is_occupied = cb3.is_occupied(random_h, random_v)
+    is_occupied = cb3.is_occupied(pos)
 
     if not is_occupied:
         cb3.fill_position(pos, order)
